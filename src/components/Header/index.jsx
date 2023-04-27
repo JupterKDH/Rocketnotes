@@ -7,7 +7,7 @@ export function Header() {
     <Container>
       <Profile>
         <img 
-        src="https://github.com/JupterKDh.png"
+        src="https://github.com/JupterKDH.png"
         alt="Foto do usuário"
         />
 
