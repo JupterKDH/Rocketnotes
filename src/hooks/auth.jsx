@@ -29,12 +29,12 @@ function AuthProvider({children}) {
     }
   }
 
- function signOut(){
+  function signOut(){
   localStorage.removeItem("@rocketnotes:user");
   localStorage.removeItem("@rocketnotes:token");
 
   setData({});
- }
+  }
 
   async function updateProfile({user, avatarFile}){
     try{
@@ -80,6 +80,7 @@ function AuthProvider({children}) {
     <AuthContext.Provider value={{
       signIn,
       signOut,
+      updateProfile,
       user: data.user,
       }}>
       {children}
