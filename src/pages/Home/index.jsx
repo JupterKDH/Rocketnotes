@@ -85,14 +85,14 @@ export function Home(){
 
       <Content>
         <Section title="Minhas notas">
-        if (Array.isArray(notes)) {
+        {
           notes.map(note => (
             <Note 
               key={String(note.id)}
               data={note}
             />
           ))
-          }
+        }
         </Section>
       </Content>
 
